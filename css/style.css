@@ -1,0 +1,117 @@
+/* Estilos para el body y el fondo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+  background: url('/formulario/images/tazaP.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+  background-size: cover; /* La imagen cubrirá todo el fondo */
+  display: flex; /* Para centrar el contenido */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  min-height: 100vh; /* Altura mínima igual a la altura de la ventana */
+  color: #333; /* Color de texto predeterminado */
+}
+
+/* Clases para definir fuentes específicas */
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilos para el formulario */
+form {
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
+  padding: 40px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  width: 90%; /* Ancho responsivo */
+  max-width: 500px; /* Ancho máximo */
+  text-align: center; /* Centra el texto */
+  color: #ffffff; /* Texto blanco para buen contraste */
+  font-family: "Lobster", sans-serif; /* Fuente para el formulario */
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Título del formulario */
+form h2 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #ffffff; /* Color blanco */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
+}
+
+/* Contenedor de cada campo de entrada */
+.input-container {
+  margin-bottom: 15px; /* Espaciado entre inputs */
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilos para los campos de entrada */
+.input-container input {
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  padding: 10px; /* Espaciado interno */
+  font-size: 1em; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  color: #333; /* Color del texto del input */
+  background-color: rgba(255, 255, 255, 0.85); /* Fondo semitransparente para inputs */
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilos para el botón de registro */
+.boton {
+  display: block; /* Muestra el botón como bloque */
+  width: 100%; /* Ocupa el ancho completo */
+  padding: 12px; /* Espaciado interno */
+  background-color: #a66f4a; /* Color de fondo en tono café */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  color: #fff; /* Texto en blanco */
+  font-size: 1.1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  margin: 20px 0; /* Margen vertical */
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.boton:hover {
+  background-color: #8b5e3c; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para el párrafo y el enlace del formulario */
+form p {
+  font-size: 0.9em; /* Tamaño de fuente pequeño */
+  color: #ffffff; /* Color blanco */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
+}
+
+form p a {
+  color: #a66f4a; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+form p a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 480px) {
+  form {
+    padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .boton {
+    padding: 10px; /* Ajusta el tamaño del botón */
+  }
+}

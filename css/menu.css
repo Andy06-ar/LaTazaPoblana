@@ -1,0 +1,180 @@
+/* Reset general: elimina márgenes y paddings por defecto y establece box-sizing en border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales: define la imagen de fondo y el color de texto predeterminado */
+body {
+    background: url('/formulario/images/body-menu2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Clases para definir tipografías específicas */
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Contenedor común: centra el contenido y define un ancho máximo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER: Sección del encabezado del menú con una imagen de fondo */
+.header-menu {
+    background: url('/formulario/images/header-menu.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Título del header: define estilo, color y sombra para el texto */
+.header-menu h1 {
+    color: #ffffff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Descripción del header */
+.header-menu p {
+    color: #000000;
+    font-size: 1.2em;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos de categorías: márgenes y fuente para cada sección del menú */
+.menu-category {
+    margin-top: 40px;
+}
+.menu-category h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/* Layout de los ítems del menú: usa flexbox para organizar los productos */
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cada ítem del menú: define ancho, fondo, padding, bordes y efectos de transición */
+.menu-item {
+    flex: 0 0 calc(33.33% - 20px);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* Imagen dentro del ítem: se ajusta al ancho del contenedor y se redondea */
+.menu-item img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Título del producto en el ítem */
+.menu-item h3 {
+    margin-top: 15px;
+    color: #8b5e3c;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Descripción del producto */
+.menu-item p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Precio del producto */
+.menu-item .price {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a66f4a;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Botón de Compra: estilo y transición para el botón */
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4b2e2e;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.buy-btn:hover {
+    background-color: #8b5e3c;
+}
+
+/* Efecto hover en el ítem completo: aumenta tamaño y añade sombra */
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER: Estilo del pie de página */
+footer {
+    background-color: #4b2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsividad: ajustes para pantallas medianas y pequeñas */
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .menu-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
